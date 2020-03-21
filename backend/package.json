@@ -1,0 +1,23 @@
+{
+  "name": "digital_co_working",
+  "version": "1.0.0",
+  "description": "#WirVsVirus",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pepebellin/digital_co_working.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pepebellin/digital_co_working/issues"
+  },
+  "homepage": "https://github.com/pepebellin/digital_co_working#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1"
+  }
+}
