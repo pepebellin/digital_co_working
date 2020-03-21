@@ -96,28 +96,28 @@ app.post('/teams', (req, res) => {
 });
 
 // GET /teams/routines
-// Parameter: 
+// Parameter: Team-ID
 // Description: Empfangen der Routinen eines Teams
 app.get('/teams/routines', (req, res) => {
-    // We will be coding here
+    
 });
 
 // POST /teams/routines
-// Parameter: 
+// Parameter: Team-ID, Routine-Name
 // Description: Routine vor Unterpunkten erzeugen
 app.post('/teams/routines', (req, res) => {
     // We will be coding here
 });
 
 // POST /teams/routines/unterpunkt
-// Parameter: 
+// Parameter: Routine-ID, Unterpunkt-Name, Start_Uhrzeit, End_Uhrzeit, Inhalt_ID, Beschreibung
 // Description: Hinzufügen eines Unterpunktes
 app.post('/teams/routines/unterpunkt', (req, res) => {
     // We will be coding here
 });
 
 // GET /teams/routine
-// Parameter: 
+// Parameter: Routine-ID
 // Description: Empfangen der Unterpunkte einer Routine
 app.get('/teams/routine', (req, res) => {
     // We will be coding here
