@@ -12,11 +12,11 @@
 Parameter of functions
 
 /teams	GET	User (x)
-/teams	POST	Team-Name, User-ID ()
-/teams/routines	GET	Team-ID ()
-/teams/routines	POST	Team-ID, Routine-Name ()
-/teams/routines/unterpunkt	POST	"Routine-ID, Unterpunkt-Name, Start_Uhrzeit, End_Uhrzeit, Inhalt_ID, Beschreibung"
-/teams/routine	GET	Routine-ID
+/teams	POST	Team-Name, User-ID (x)
+/teams/routines	GET	Team-ID (x)
+/teams/routines	POST	Team-ID, Routine-Name (x)
+/teams/routines/unterpunkt	POST	"Routine-ID, Unterpunkt-Name, Start_Uhrzeit, End_Uhrzeit, Inhalt_ID, Beschreibung" (x)
+/teams/routine	GET	Routine-ID (x)
 
 
 ---------------------------*/
@@ -44,7 +44,7 @@ app.use(bodyParser.json());
 // Description: Empfangen aller Teams des Users
 app.get('/teams', (req, res) => {
     //Getting of parameter
-    var user = req.query.user;
+    var user_id = req.query.user_id;
     var result = {};
 
     /*
@@ -83,8 +83,8 @@ app.post('/teams', (req, res) => {
     } */
 
     var body = req.body;
-    var team = body.team;
-    var user = body.user;
+    var team_name = body.team_name;
+    var user_id = body.user_id;
 
     // @Yannik -> User Loop für SQL query? Wie ist das format?
 
@@ -99,30 +99,125 @@ app.post('/teams', (req, res) => {
 // Parameter: Team-ID
 // Description: Empfangen der Routinen eines Teams
 app.get('/teams/routines', (req, res) => {
+    //Getting of parameter
+    var team_id = req.query.team_id;
+    var result = {};
+
+    /*
     
+        DB Query 
+    
+    */
+
+    /*
+    Result format has to be like this
+    {[
+        {
+            "routine_id":"",
+            "routine_name":""
+        },{
+            "routine_id":"",
+            "routine_name":""
+        }
+
+    ]}
+    */
+
+    //for loop to take all result teams and put them into JSON
+    res.send(result);
 });
 
 // POST /teams/routines
 // Parameter: Team-ID, Routine-Name
-// Description: Routine vor Unterpunkten erzeugen
+// Description: Routine erzeugen (vor Unterpunkten)
 app.post('/teams/routines', (req, res) => {
-    // We will be coding here
+    /* 
+    Body format has to be like this:
+    {
+        "team_id" : "ID des Teams",
+        "routine_name" : "Name der Routine"
+    } */
+
+    var body = req.body;
+    var team_id = body.team_id;
+    var routine_name = body.routine_name;
+
+    /*
+        DB Query
+    */
+
+    res.send('Routine ' + routine + ' wurde erstellt.');
 });
 
 // POST /teams/routines/unterpunkt
 // Parameter: Routine-ID, Unterpunkt-Name, Start_Uhrzeit, End_Uhrzeit, Inhalt_ID, Beschreibung
 // Description: Hinzufügen eines Unterpunktes
 app.post('/teams/routines/unterpunkt', (req, res) => {
-    // We will be coding here
+    /* 
+    Body format has to be like this:
+    {
+        "routine_id" : "ID der Routine",
+        "unterpunkt" : "Name des Unterpunkts",
+        "Start_Uhrzeit" : "HH:mm",
+        "End_Uhrzeit" : "HH:mm",
+        "Inhalt_ID" : "ID der Kategorie",
+        "Beschreibung" : "Beschreibung des Unterpunktes"
+    } */
+
+    var body = req.body;
+    var routine_id = body.routine_id;
+    var unterpunkt = body.unterpunkt;
+    var Start_Uhrzeit = body.Start_Uhrzeit;
+    var End_Uhrzeit = body.End_Uhrzeit;
+    var Inhalt_ID = body.Inhalt_ID;
+    var Beschreibung = body.Beschreibung;
+
+    /*
+        DB Query
+    */
+
+    res.send('Unterpunkt ' + Unterpunkt + ' wurde erstellt.');
 });
 
 // GET /teams/routine
 // Parameter: Routine-ID
 // Description: Empfangen der Unterpunkte einer Routine
+
+//"Routine-ID, Unterpunkt-Name, Start_Uhrzeit, End_Uhrzeit, Inhalt_ID, Beschreibung"
 app.get('/teams/routine', (req, res) => {
-    // We will be coding here
+    //Getting of parameter
+    var routine_id = req.query.routine_id;
+    var result = {};
+
+    /*
+    
+        DB Query 
+    
+    */
+
+    /*
+    Result format has to be like this
+    {[
+        {
+            "routine_id" : "ID der Routine",
+            "unterpunkt" : "Name des Unterpunkts",
+            "Start_Uhrzeit" : "HH:mm",
+            "End_Uhrzeit" : "HH:mm",
+            "Inhalt_ID" : "ID der Kategorie",
+            "Beschreibung" : "Beschreibung des Unterpunktes"
+        },{
+            "routine_id" : "ID der Routine",
+            "unterpunkt" : "Name des Unterpunkts",
+            "Start_Uhrzeit" : "HH:mm",
+            "End_Uhrzeit" : "HH:mm",
+            "Inhalt_ID" : "ID der Kategorie",
+            "Beschreibung" : "Beschreibung des Unterpunktes"
+        }
+    ]}
+    */
+
+    //for loop to take all result teams and put them into JSON
+    res.send(result);
 });
-
-
 
 app.listen(port, () => console.log(`Hello world app listening on port ${port}!`));
