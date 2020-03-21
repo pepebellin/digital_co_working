@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Erstellungszeit: 21. Mrz 2020 um 15:56
+-- Erstellungszeit: 21. Mrz 2020 um 16:38
 -- Server-Version: 10.4.11-MariaDB
 -- PHP-Version: 7.4.3
 
@@ -48,6 +48,16 @@ CREATE TABLE `routine` (
   `Erstellungsdatum` datetime NOT NULL DEFAULT current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
+--
+-- Daten für Tabelle `routine`
+--
+
+INSERT INTO `routine` (`ID`, `Name`, `TeamID`, `Erstellungsdatum`) VALUES
+(100000, 'Routine1', 10000, '2020-03-21 16:16:15'),
+(100001, 'Routine2', 10000, '2020-03-21 16:16:15'),
+(100002, 'Routine Montag', 10001, '2020-03-21 16:16:15'),
+(100003, 'Routine Dienstag', 10000, '2020-03-21 16:16:15');
+
 -- --------------------------------------------------------
 
 --
@@ -60,6 +70,14 @@ CREATE TABLE `team` (
   `Erstellungsdatum` timestamp NOT NULL DEFAULT current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
+--
+-- Daten für Tabelle `team`
+--
+
+INSERT INTO `team` (`ID`, `Name`, `Erstellungsdatum`) VALUES
+(10000, 'Team1', '2020-03-21 15:08:01'),
+(10001, 'Team2', '2020-03-21 15:08:01');
+
 -- --------------------------------------------------------
 
 --
@@ -71,10 +89,18 @@ CREATE TABLE `unterpunkte` (
   `Name` varchar(20) NOT NULL,
   `Starttime` time NOT NULL,
   `Endtime` time NOT NULL,
-  `KategorieID` int(5) NOT NULL,
+  `KategorieID` int(10) NOT NULL,
   `Beschreibung` text NOT NULL,
-  `RoutineID` int(5) NOT NULL
+  `RoutineID` int(10) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Daten für Tabelle `unterpunkte`
+--
+
+INSERT INTO `unterpunkte` (`ID`, `Name`, `Starttime`, `Endtime`, `KategorieID`, `Beschreibung`, `RoutineID`) VALUES
+(100000, 'Hangouts', '09:00:00', '12:00:00', 100000, 'Hier könnte ein Text stehen', 100000),
+(100001, 'Pause', '12:00:00', '13:00:00', 100001, 'Jetzt ist Pause', 100000);
 
 -- --------------------------------------------------------
 
@@ -92,6 +118,14 @@ CREATE TABLE `user` (
   `Erstellungsdatum` timestamp NOT NULL DEFAULT current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
+--
+-- Daten für Tabelle `user`
+--
+
+INSERT INTO `user` (`Email`, `Vorname`, `Nachname`, `Nutzername`, `Passwort`, `Geburtsdatum`, `Erstellungsdatum`) VALUES
+('user1@test.de', 'Ulf', 'Fischer', 'ufischer', '123456', '2020-03-31', '2020-03-21 15:02:56'),
+('user@test.de', 'Peter', 'Schmidt', 'pschmidt', '123456', '2020-03-01', '2020-03-21 15:02:56');
+
 -- --------------------------------------------------------
 
 --
@@ -99,10 +133,21 @@ CREATE TABLE `user` (
 --
 
 CREATE TABLE `user-team-zuordnung` (
-  `UserID` int(5) NOT NULL,
+  `UserID` varchar(30) NOT NULL,
   `TeamID` int(5) NOT NULL,
   `Erstellungsdatum` timestamp NOT NULL DEFAULT current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Daten für Tabelle `user-team-zuordnung`
+--
+
+INSERT INTO `user-team-zuordnung` (`UserID`, `TeamID`, `Erstellungsdatum`) VALUES
+('user^', 0, '2020-03-21 15:13:29'),
+('user@test.de', 1000, '2020-03-21 15:13:29'),
+('user1@test.de', 10000, '2020-03-21 15:14:43'),
+('user@test.de', 10000, '2020-03-21 15:14:43'),
+('user@test.de', 10001, '2020-03-21 15:14:43');
 
 --
 -- Indizes der exportierten Tabellen
@@ -159,19 +204,19 @@ ALTER TABLE `kategorie`
 -- AUTO_INCREMENT für Tabelle `routine`
 --
 ALTER TABLE `routine`
-  MODIFY `ID` int(10) NOT NULL AUTO_INCREMENT;
+  MODIFY `ID` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=100005;
 
 --
 -- AUTO_INCREMENT für Tabelle `team`
 --
 ALTER TABLE `team`
-  MODIFY `ID` int(5) NOT NULL AUTO_INCREMENT;
+  MODIFY `ID` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10003;
 
 --
 -- AUTO_INCREMENT für Tabelle `unterpunkte`
 --
 ALTER TABLE `unterpunkte`
-  MODIFY `ID` int(10) NOT NULL AUTO_INCREMENT;
+  MODIFY `ID` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=100003;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
