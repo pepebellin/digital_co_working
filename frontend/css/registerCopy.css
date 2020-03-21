@@ -1,0 +1,1245 @@
+
+
+.registercopy {
+  width               : 100%;
+  min-width           : 912px;
+  height              : 100vh;
+  min-height          : 1105px;
+  position            : relative;
+  overflow            : hidden;
+  margin              : 0px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color    : rgba(255, 255, 255, 1.0);
+  opacity             : 1.0;
+}
+a {
+  text-decoration     : none;
+}
+div {
+  -webkit-text-size-adjust: none;
+}
+.anima-full-width-a {
+  width               : 100%;
+}
+.anima-full-height-a {
+  height              : 100%;
+}
+div {
+  -webkit-text-size-adjust: none;
+}
+.registercopy .rectangle6 {
+  background-color    : rgba(255, 255, 255, 1.0);
+  top                 : 0px;
+  height              : 667px;
+  width               : 375px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+  transform           : rotate(0deg);
+  opacity             : 1.0;
+}
+.registercopy .homeofficeheimarbeit {
+  background-color    : rgba(215, 215, 215, 1.0);
+  top                 : 0px;
+  height              : 235px;
+  width               : 376px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+  overflow            : hidden;
+  transform           : rotate(0deg);
+  opacity             : 1.0;
+}
+.registercopy .homeofficeheimarbeit .mask {
+  background-color    : rgba(215, 215, 215, 1.0);
+  top                 : 0px;
+  height              : 235px;
+  width               : 376px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+  transform           : rotate(0deg);
+  opacity             : 1.0;
+}
+.registercopy .homeofficeheimarbeit .homeofficeheimarbeit1 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 56px;
+  height              : 211px;
+  width               : 375px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+  transform           : rotate(0deg);
+  opacity             : 1.0;
+}
+.registercopy .group2 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 235px;
+  height              : 840px;
+  width               : 850px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+  transform           : rotate(0deg);
+  opacity             : 1.0;
+}
+.registercopy .group2 .banner {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 0px;
+  height              : 311px;
+  width               : 468px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+  transform           : rotate(0deg);
+  opacity             : 1.0;
+}
+.registercopy .group2 .banner .rectangle1 {
+  background-color    : rgba(255, 255, 255, 1.0);
+  top                 : 0px;
+  height              : 311px;
+  width               : 468px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+  transform           : rotate(0deg);
+  opacity             : 1.0;
+}
+.registercopy .group2 .banner .meineteamsu2014 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 20px;
+  height              : auto;
+  width               : 225px;
+  position            : absolute;
+  margin              : 0;
+  left                : 40px;
+  transform           : rotate(0deg);
+  opacity             : 1.0;
+  font-family         : "Avenir-Black", Helvetica, Arial, serif;
+  font-size           : 24.0px;
+  color               : rgba(108, 211, 124, 1.0);
+  text-align          : left;
+  line-height         : 24.0px;
+}
+.registercopy .group2 .group4 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 83px;
+  height              : 210px;
+  width               : 265px;
+  position            : absolute;
+  margin              : 0;
+  left                : 30px;
+  transform           : rotate(0deg);
+  opacity             : 1.0;
+}
+.registercopy .group2 .group4 .rectangle8copy2 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 0px;
+  height              : 210px;
+  width               : 255px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+  transform           : rotate(0deg);
+  opacity             : 1.0;
+}
+.registercopy .group2 .group4 .team1marketing {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 39px;
+  height              : auto;
+  width               : 226px;
+  position            : absolute;
+  margin              : 0;
+  left                : 49px;
+  transform           : rotate(0deg);
+  opacity             : 1.0;
+  font-family         : "Avenir-Black", Helvetica, Arial, serif;
+  font-size           : 20.0px;
+  color               : rgba(36, 59, 107, 1.0);
+  text-align          : left;
+  line-height         : 24.0px;
+}
+.registercopy .group2 .group4 .team1marketing .span1 {
+  
+}
+.registercopy .group2 .group4 .team1marketing .span2 {
+  font-family         : "Avenir-Medium", Helvetica, Arial, serif;
+}
+.registercopy .group2 .group4 .group {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 101px;
+  height              : 69px;
+  width               : 165px;
+  position            : absolute;
+  margin              : 0;
+  left                : 47px;
+  transform           : rotate(0deg);
+  opacity             : 1.0;
+}
+.registercopy .group2 .group5 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 83px;
+  height              : 210px;
+  width               : 261px;
+  position            : absolute;
+  margin              : 0;
+  left                : 279px;
+  transform           : rotate(0deg);
+  opacity             : 1.0;
+}
+.registercopy .group2 .group5 .rectangle8copy3 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 0px;
+  height              : 210px;
+  width               : 255px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+  transform           : rotate(0deg);
+  opacity             : 1.0;
+}
+.registercopy .group2 .group5 .groupcopy {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 101px;
+  height              : 69px;
+  width               : 167px;
+  position            : absolute;
+  margin              : 0;
+  left                : 43px;
+  transform           : rotate(0deg);
+  opacity             : 1.0;
+}
+.registercopy .group2 .group5 .team2it {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 39px;
+  height              : auto;
+  width               : 225px;
+  position            : absolute;
+  margin              : 0;
+  left                : 45px;
+  transform           : rotate(0deg);
+  opacity             : 1.0;
+  font-family         : "Avenir-Black", Helvetica, Arial, serif;
+  font-size           : 20.0px;
+  color               : rgba(36, 59, 107, 1.0);
+  text-align          : left;
+  line-height         : 24.0px;
+}
+.registercopy .group2 .group5 .team2it .span1 {
+  
+}
+.registercopy .group2 .group5 .team2it .span2 {
+  font-family         : "Avenir-Medium", Helvetica, Arial, serif;
+}
+.registercopy .group2 .group51 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 83px;
+  height              : 210px;
+  width               : 261px;
+  position            : absolute;
+  margin              : 0;
+  left                : 559px;
+  transform           : rotate(0deg);
+  opacity             : 1.0;
+}
+.registercopy .group2 .group51 .rectangle8copy3 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 0px;
+  height              : 210px;
+  width               : 255px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+  transform           : rotate(0deg);
+  opacity             : 1.0;
+}
+.registercopy .group2 .group51 .groupcopy {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 101px;
+  height              : 69px;
+  width               : 167px;
+  position            : absolute;
+  margin              : 0;
+  left                : 43px;
+  transform           : rotate(0deg);
+  opacity             : 1.0;
+}
+.registercopy .group2 .group51 .team3tester {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 38px;
+  height              : auto;
+  width               : 225px;
+  position            : absolute;
+  margin              : 0;
+  left                : 45px;
+  transform           : rotate(0deg);
+  opacity             : 1.0;
+  font-family         : "Avenir-Black", Helvetica, Arial, serif;
+  font-size           : 20.0px;
+  color               : rgba(36, 59, 107, 1.0);
+  text-align          : left;
+  line-height         : 24.0px;
+}
+.registercopy .group2 .group51 .team3tester .span1 {
+  
+}
+.registercopy .group2 .group51 .team3tester .span2 {
+  font-family         : "Avenir-Medium", Helvetica, Arial, serif;
+}
+.registercopy .group2 .group52 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 328px;
+  height              : 512px;
+  width               : 404px;
+  position            : absolute;
+  margin              : 0;
+  left                : 446px;
+  transform           : rotate(0deg);
+  opacity             : 1.0;
+}
+.registercopy .group2 .group52 .rectangle8copy3 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 0px;
+  height              : 512px;
+  width               : 404px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+  transform           : rotate(0deg);
+  opacity             : 1.0;
+}
+.registercopy .group2 .group52 .completeresponsive {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 38px;
+  height              : auto;
+  width               : 225px;
+  position            : absolute;
+  margin              : 0;
+  left                : 45px;
+  transform           : rotate(0deg);
+  opacity             : 1.0;
+  font-family         : "Avenir-Black", Helvetica, Arial, serif;
+  font-size           : 20.0px;
+  color               : rgba(36, 59, 107, 1.0);
+  text-align          : left;
+  line-height         : 24.0px;
+}
+.registercopy .group2copy {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 546px;
+  height              : 48px;
+  width               : 181px;
+  position            : absolute;
+  margin              : 0;
+  left                : 32px;
+  transform           : rotate(0deg);
+  opacity             : 1.0;
+}
+.registercopy .group2copy .banner {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 0px;
+  height              : 48px;
+  width               : 181px;
+  position            : relative;
+  margin              : 0;
+  left                : 0px;
+  transform           : rotate(0deg);
+  opacity             : 1.0;
+}
+.registercopy .group2copy .banner .meineroutineu2014 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 0px;
+  height              : auto;
+  width               : 180px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+  transform           : rotate(0deg);
+  opacity             : 1.0;
+  font-family         : "Avenir-Black", Helvetica, Arial, serif;
+  font-size           : 24.0px;
+  color               : rgba(108, 211, 124, 1.0);
+  text-align          : left;
+  line-height         : 24.0px;
+}
+.registercopy .group6 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 614px;
+  height              : 497px;
+  width               : 425px;
+  position            : absolute;
+  margin              : 0;
+  left                : -1px;
+  transform           : rotate(0deg);
+  opacity             : 1.0;
+}
+.registercopy .group6 .line {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 49px;
+  height              : 3px;
+  width               : 359px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+  transform           : rotate(0deg);
+  opacity             : 0.05;
+}
+.registercopy .group6 .rectangle8copy2 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 3px;
+  height              : 79px;
+  width               : 259px;
+  position            : absolute;
+  margin              : 0;
+  left                : 76px;
+  transform           : rotate(0deg);
+  opacity             : 1.0;
+}
+.registercopy .group6 .combinedshape {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 55px;
+  height              : 7px;
+  width               : 359px;
+  position            : absolute;
+  margin              : 0;
+  left                : 67px;
+  transform           : rotate(0deg);
+  opacity             : 1.0;
+}
+.registercopy .group6 .linecopy2 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 212px;
+  height              : 3px;
+  width               : 359px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+  transform           : rotate(0deg);
+  opacity             : 0.05;
+}
+.registercopy .group6 .linecopy4 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 458px;
+  height              : 3px;
+  width               : 359px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+  transform           : rotate(0deg);
+  opacity             : 0.05;
+}
+.registercopy .group6 .linecopy {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 133px;
+  height              : 3px;
+  width               : 359px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+  transform           : rotate(0deg);
+  opacity             : 0.05;
+}
+.registercopy .group6 .linecopy5 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 379px;
+  height              : 3px;
+  width               : 359px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+  transform           : rotate(0deg);
+  opacity             : 0.05;
+}
+.registercopy .group6 .linecopy3 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 295px;
+  height              : 3px;
+  width               : 359px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+  transform           : rotate(0deg);
+  opacity             : 0.05;
+}
+.registercopy .group6 .rectangle8copy4 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 95px;
+  height              : 79px;
+  width               : 259px;
+  position            : absolute;
+  margin              : 0;
+  left                : 76px;
+  transform           : rotate(0deg);
+  opacity             : 1.0;
+}
+.registercopy .group6 .rectangle8copy7 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 243px;
+  height              : 59px;
+  width               : 259px;
+  position            : absolute;
+  margin              : 0;
+  left                : 76px;
+  transform           : rotate(0deg);
+  opacity             : 1.0;
+}
+.registercopy .group6 .rectangle8copy6 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 169px;
+  height              : 79px;
+  width               : 259px;
+  position            : absolute;
+  margin              : 0;
+  left                : 76px;
+  transform           : rotate(0deg);
+  opacity             : 1.0;
+}
+.registercopy .group6 .rectangle8copy5 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 323px;
+  height              : 124px;
+  width               : 258px;
+  position            : absolute;
+  margin              : 0;
+  left                : 77px;
+  transform           : rotate(0deg);
+  opacity             : 1.0;
+}
+.registercopy .group6 .completed {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 339px;
+  height              : 10px;
+  width               : 10px;
+  position            : absolute;
+  margin              : 0;
+  left                : 305px;
+  transform           : rotate(0deg);
+  opacity             : 1.0;
+}
+.registercopy .group6 .completedcopy {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 109px;
+  height              : 10px;
+  width               : 10px;
+  position            : absolute;
+  margin              : 0;
+  left                : 305px;
+  transform           : rotate(0deg);
+  opacity             : 1.0;
+}
+.registercopy .group6 .avatar {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 387px;
+  height              : 31px;
+  width               : 29px;
+  position            : absolute;
+  margin              : 0;
+  left                : 181px;
+  transform           : rotate(0deg);
+  opacity             : 1.0;
+}
+.registercopy .group6 .avatar .avatar3 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 0px;
+  height              : 31px;
+  width               : 29px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+  transform           : rotate(0deg);
+  opacity             : 1.0;
+}
+.registercopy .group6 .avatar1 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 387px;
+  height              : 31px;
+  width               : 29px;
+  position            : absolute;
+  margin              : 0;
+  left                : 143px;
+  transform           : rotate(0deg);
+  opacity             : 1.0;
+}
+.registercopy .group6 .avatar1 .avatar3 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 0px;
+  height              : 31px;
+  width               : 29px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+  transform           : rotate(0deg);
+  opacity             : 1.0;
+}
+.registercopy .group6 .avatar2 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 387px;
+  height              : 31px;
+  width               : 29px;
+  position            : absolute;
+  margin              : 0;
+  left                : 104px;
+  transform           : rotate(0deg);
+  opacity             : 1.0;
+}
+.registercopy .group6 .avatar2 .avatar3 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 0px;
+  height              : 31px;
+  width               : 29px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+  transform           : rotate(0deg);
+  opacity             : 1.0;
+}
+.registercopy .group6 .a1 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 0px;
+  height              : 33px;
+  width               : 32px;
+  position            : absolute;
+  margin              : 0;
+  left                : 25px;
+  transform           : rotate(0deg);
+  opacity             : 1.0;
+}
+.registercopy .group6 .a1 .a900 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 1px;
+  height              : auto;
+  width               : 32px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+  transform           : rotate(0deg);
+  opacity             : 1.0;
+  font-family         : "Avenir-Book", Helvetica, Arial, serif;
+  font-size           : 12.0px;
+  color               : rgba(29, 29, 38, 1.0);
+  text-align          : left;
+  letter-spacing      : 0.77px;
+  line-height         : 32.0px;
+}
+.registercopy .group6 .a1copy {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 83px;
+  height              : 33px;
+  width               : 46px;
+  position            : absolute;
+  margin              : 0;
+  left                : 26px;
+  transform           : rotate(0deg);
+  opacity             : 1.0;
+}
+.registercopy .group6 .a1copy .a1000 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 1px;
+  height              : auto;
+  width               : 46px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+  transform           : rotate(0deg);
+  opacity             : 1.0;
+  font-family         : "Avenir-Book", Helvetica, Arial, serif;
+  font-size           : 12.0px;
+  color               : rgba(29, 29, 38, 1.0);
+  text-align          : left;
+  letter-spacing      : 0.77px;
+  line-height         : 32.0px;
+}
+.registercopy .group6 .a1copy3 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 246px;
+  height              : 33px;
+  width               : 46px;
+  position            : absolute;
+  margin              : 0;
+  left                : 26px;
+  transform           : rotate(0deg);
+  opacity             : 1.0;
+}
+.registercopy .group6 .a1copy3 .a1200 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 1px;
+  height              : auto;
+  width               : 46px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+  transform           : rotate(0deg);
+  opacity             : 1.0;
+  font-family         : "Avenir-Book", Helvetica, Arial, serif;
+  font-size           : 12.0px;
+  color               : rgba(29, 29, 38, 1.0);
+  text-align          : left;
+  letter-spacing      : 0.77px;
+  line-height         : 32.0px;
+}
+.registercopy .group6 .a1copy2 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 167px;
+  height              : 33px;
+  width               : 46px;
+  position            : absolute;
+  margin              : 0;
+  left                : 26px;
+  transform           : rotate(0deg);
+  opacity             : 1.0;
+}
+.registercopy .group6 .a1copy2 .a1100 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 1px;
+  height              : auto;
+  width               : 46px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+  transform           : rotate(0deg);
+  opacity             : 1.0;
+  font-family         : "Avenir-Book", Helvetica, Arial, serif;
+  font-size           : 12.0px;
+  color               : rgba(29, 29, 38, 1.0);
+  text-align          : left;
+  letter-spacing      : 0.77px;
+  line-height         : 32.0px;
+}
+.registercopy .group6 .a1copy6 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 413px;
+  height              : 33px;
+  width               : 46px;
+  position            : absolute;
+  margin              : 0;
+  left                : 26px;
+  transform           : rotate(0deg);
+  opacity             : 1.0;
+}
+.registercopy .group6 .a1copy6 .a1400 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 1px;
+  height              : auto;
+  width               : 46px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+  transform           : rotate(0deg);
+  opacity             : 1.0;
+  font-family         : "Avenir-Book", Helvetica, Arial, serif;
+  font-size           : 12.0px;
+  color               : rgba(29, 29, 38, 1.0);
+  text-align          : left;
+  letter-spacing      : 0.77px;
+  line-height         : 32.0px;
+}
+.registercopy .group6 .a1copy4 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 329px;
+  height              : 33px;
+  width               : 46px;
+  position            : absolute;
+  margin              : 0;
+  left                : 26px;
+  transform           : rotate(0deg);
+  opacity             : 1.0;
+}
+.registercopy .group6 .a1copy4 .a1300 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 1px;
+  height              : auto;
+  width               : 46px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+  transform           : rotate(0deg);
+  opacity             : 1.0;
+  font-family         : "Avenir-Book", Helvetica, Arial, serif;
+  font-size           : 12.0px;
+  color               : rgba(29, 29, 38, 1.0);
+  text-align          : left;
+  letter-spacing      : 0.77px;
+  line-height         : 32.0px;
+}
+.registercopy .group6 .completeresponsive {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 20px;
+  height              : auto;
+  width               : 151px;
+  position            : absolute;
+  margin              : 0;
+  left                : 104px;
+  transform           : rotate(0deg);
+  opacity             : 1.0;
+  font-family         : "Avenir-Book", Helvetica, Arial, serif;
+  font-size           : 12.0px;
+  color               : rgba(36, 59, 107, 1.0);
+  text-align          : left;
+  line-height         : 16.0px;
+}
+.registercopy .group6 .meetingit {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 344px;
+  height              : auto;
+  width               : 56px;
+  position            : absolute;
+  margin              : 0;
+  left                : 104px;
+  transform           : rotate(0deg);
+  opacity             : 1.0;
+  font-family         : "Avenir-Book", Helvetica, Arial, serif;
+  font-size           : 12.0px;
+  color               : rgba(36, 59, 107, 1.0);
+  text-align          : left;
+  line-height         : 16.0px;
+}
+.registercopy .group6 .meetingpr {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 112px;
+  height              : auto;
+  width               : 60px;
+  position            : absolute;
+  margin              : 0;
+  left                : 104px;
+  transform           : rotate(0deg);
+  opacity             : 1.0;
+  font-family         : "Avenir-Book", Helvetica, Arial, serif;
+  font-size           : 12.0px;
+  color               : rgba(36, 59, 107, 1.0);
+  text-align          : left;
+  line-height         : 16.0px;
+}
+.registercopy .group6 .skypegespr344chlisa {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 260px;
+  height              : auto;
+  width               : 100px;
+  position            : absolute;
+  margin              : 0;
+  left                : 104px;
+  transform           : rotate(0deg);
+  opacity             : 1.0;
+  font-family         : "Avenir-Book", Helvetica, Arial, serif;
+  font-size           : 12.0px;
+  color               : rgba(36, 59, 107, 1.0);
+  text-align          : left;
+  line-height         : 16.0px;
+}
+.registercopy .group6 .pause {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 187px;
+  height              : auto;
+  width               : 30px;
+  position            : absolute;
+  margin              : 0;
+  left                : 104px;
+  transform           : rotate(0deg);
+  opacity             : 1.0;
+  font-family         : "Avenir-Book", Helvetica, Arial, serif;
+  font-size           : 12.0px;
+  color               : rgba(36, 59, 107, 1.0);
+  text-align          : left;
+  line-height         : 16.0px;
+}
+.registercopy .group6 .team1 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 40px;
+  height              : auto;
+  width               : 37px;
+  position            : absolute;
+  margin              : 0;
+  left                : 104px;
+  transform           : rotate(0deg);
+  opacity             : 0.5;
+  font-family         : "Avenir-Book", Helvetica, Arial, serif;
+  font-size           : 12.0px;
+  color               : rgba(36, 59, 107, 1.0);
+  text-align          : left;
+  line-height         : 16.0px;
+}
+.registercopy .group6 .team2 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 364px;
+  height              : auto;
+  width               : 37px;
+  position            : absolute;
+  margin              : 0;
+  left                : 104px;
+  transform           : rotate(0deg);
+  opacity             : 0.5;
+  font-family         : "Avenir-Book", Helvetica, Arial, serif;
+  font-size           : 12.0px;
+  color               : rgba(36, 59, 107, 1.0);
+  text-align          : left;
+  line-height         : 16.0px;
+}
+.registercopy .group6 .team3 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 132px;
+  height              : auto;
+  width               : 37px;
+  position            : absolute;
+  margin              : 0;
+  left                : 104px;
+  transform           : rotate(0deg);
+  opacity             : 0.5;
+  font-family         : "Avenir-Book", Helvetica, Arial, serif;
+  font-size           : 12.0px;
+  color               : rgba(36, 59, 107, 1.0);
+  text-align          : left;
+  line-height         : 16.0px;
+}
+.registercopy .group6 .a11001140 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 207px;
+  height              : auto;
+  width               : 68px;
+  position            : absolute;
+  margin              : 0;
+  left                : 103px;
+  transform           : rotate(0deg);
+  opacity             : 0.5;
+  font-family         : "Avenir-Book", Helvetica, Arial, serif;
+  font-size           : 12.0px;
+  color               : rgba(36, 59, 107, 1.0);
+  text-align          : left;
+  line-height         : 16.0px;
+}
+.registercopy .group6 .group9 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 416px;
+  height              : 61px;
+  width               : 53px;
+  position            : absolute;
+  margin              : 0;
+  left                : 284px;
+  transform           : rotate(0deg);
+  opacity             : 1.0;
+}
+.registercopy .group6 .group9 .oval {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 21px;
+  height              : 40px;
+  width               : 38px;
+  position            : absolute;
+  margin              : 0;
+  left                : 8px;
+  transform           : rotate(0deg);
+  opacity             : 0.5;
+}
+.registercopy .group6 .group9 .ovalcopy {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 0px;
+  height              : 56px;
+  width               : 53px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+  transform           : rotate(0deg);
+  opacity             : 1.0;
+}
+.registercopy .group6 .group9 .image1 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 20px;
+  height              : 16px;
+  width               : 15px;
+  position            : absolute;
+  margin              : 0;
+  left                : 18px;
+  transform           : rotate(0deg);
+  opacity             : 1.0;
+}
+.registercopy .rectangle {
+  background-color    : rgba(36, 59, 107, 1.0);
+  top                 : 0px;
+  height              : 235px;
+  width               : 912px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+  transform           : rotate(0deg);
+  opacity             : 0.51;
+}
+.registercopy .group3 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 118px;
+  height              : 83px;
+  width               : 148px;
+  position            : absolute;
+  margin              : 0;
+  left                : 114px;
+  transform           : rotate(0deg);
+  opacity             : 1.0;
+}
+.registercopy .group3 .a9 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : -49px;
+  height              : auto;
+  width               : auto;
+  position            : absolute;
+  margin              : 0;
+  left                : 52px;
+  transform           : rotate(0deg);
+  opacity             : 1.0;
+  font-family         : "Helvetica", Helvetica, Arial, serif;
+  font-size           : 73.0px;
+  color               : rgba(255, 255, 255, 1.0);
+  text-align          : left;
+  line-height         : 24.0px;
+}
+.registercopy .group3 .februar2020 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 66px;
+  height              : auto;
+  width               : auto;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+  transform           : rotate(0deg);
+  opacity             : 0.6;
+  font-family         : "Helvetica", Helvetica, Arial, serif;
+  font-size           : 14.0px;
+  color               : rgba(255, 255, 255, 1.0);
+  text-align          : left;
+  letter-spacing      : 4.0px;
+  line-height         : 17.0px;
+}
+.registercopy .group3 .februar2020 .span1 {
+  
+}
+.registercopy .group3 .februar2020 .span2 {
+  
+}
+.registercopy .group3 .montag {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 42px;
+  height              : auto;
+  width               : auto;
+  position            : absolute;
+  margin              : 0;
+  left                : 31px;
+  transform           : rotate(0deg);
+  opacity             : 1.0;
+  font-family         : "Helvetica", Helvetica, Arial, serif;
+  font-size           : 14.0px;
+  color               : rgba(255, 255, 255, 1.0);
+  text-align          : left;
+  letter-spacing      : 4.0px;
+  line-height         : 17.0px;
+}
+.registercopy .rectangle2 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : -36px;
+  height              : 140px;
+  width               : 988px;
+  position            : absolute;
+  margin              : 0;
+  left                : -38px;
+  transform           : rotate(0deg);
+  opacity             : 1.0;
+}
+.registercopy .menusimplelineicons {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 35px;
+  height              : 15px;
+  width               : 20px;
+  position            : absolute;
+  margin              : 0;
+  left                : 16px;
+  transform           : rotate(0deg);
+  opacity             : 1.0;
+}
+.registercopy .magnifiersimplelineicons {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 32px;
+  height              : 22px;
+  width               : 22px;
+  position            : absolute;
+  margin              : 0;
+  left                : 492px;
+  transform           : rotate(0deg);
+  opacity             : 1.0;
+}
+.registercopy .hallomax {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 34px;
+  height              : auto;
+  width               : auto;
+  position            : absolute;
+  margin              : 0;
+  left                : 121px;
+  transform           : rotate(0deg);
+  opacity             : 1.0;
+  font-family         : "Helvetica", Helvetica, Arial, serif;
+  font-size           : 14.0px;
+  color               : rgba(36, 59, 107, 1.0);
+  text-align          : center;
+  letter-spacing      : 4.0px;
+  line-height         : 17.0px;
+}
+.registercopy .right {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 127px;
+  height              : 50px;
+  width               : 50px;
+  position            : absolute;
+  margin              : 0;
+  left                : 325px;
+  transform           : rotate(0deg);
+  opacity             : 1.0;
+}
+.registercopy .right .group {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 14px;
+  height              : 22px;
+  width               : 12px;
+  position            : absolute;
+  margin              : 0;
+  left                : 19px;
+  transform           : rotate(0deg);
+  opacity             : 1.0;
+}
+.registercopy .right .group .shape {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 0px;
+  height              : 22px;
+  width               : 12px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+  transform           : rotate(-180deg);
+  opacity             : 1.0;
+}
+.registercopy .right .bounds {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 0px;
+  height              : 50px;
+  width               : 50px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+  transform           : rotate(0deg);
+  opacity             : 1.0;
+}
+.registercopy .rightcopy {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 127px;
+  height              : 50px;
+  width               : 50px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+  transform           : rotate(0deg);
+  opacity             : 1.0;
+}
+/* .anima-animate-appear prefix for appear animations */
+.anima-animate-appear {
+  opacity             : 0;
+  display             : block;
+  -webkit-animation   : anima-reveal 0.3s ease-in-out 1 normal forwards;
+  -moz-animation      : anima-reveal 0.3s ease-in 1 normal forwards;
+  -o-animation        : anima-reveal 0.3s ease-in-out 1 normal forwards;
+  animation           : anima-reveal 0.3s ease-in-out 1 normal forwards;
+}
+.anima-animate-disappear {
+  opacity             : 1;
+  display             : block;
+  -webkit-animation   : anima-reveal 0.3s ease-in-out 1 reverse forwards;
+  -moz-animation      : anima-reveal 0.3s ease-in 1 normal forwards;
+  -o-animation        : anima-reveal 0.3s ease-in-out 1 reverse forwards;
+  animation           : anima-reveal 0.3s ease-in-out 1 reverse forwards;
+}
+.anima-animate-nodelay {
+  -webkit-animation-delay: 0;
+  -moz-animation-delay: 0;
+  -o-animation-delay  : 0;
+  animation-delay     : 0;
+}
+@-webkit-keyframes anima-reveal {
+  0%
+   
+  {
+      opacity: 0;
+    }
+  
+    
+  100%
+   
+  {
+      opacity: 1;
+    }
+}
+@-moz-keyframes anima-reveal {
+  0%
+   
+  {
+      opacity: 0;
+    }
+  
+    
+  100%
+   
+  {
+      opacity: 1;
+    }
+}
+@-o-keyframes anima-reveal {
+  0%
+   
+  {
+      opacity: 0;
+    }
+  
+    
+  100%
+   
+  {
+      opacity: 1;
+    }
+}
+@keyframes anima-reveal {
+  0%
+   
+  {
+      opacity: 0;
+    }
+  
+    
+  100%
+   
+  {
+      opacity: 1;
+    }
+}
+.anima-component-wrapper,
+.anima-component-wrapper * {
+  pointer-events      : none;
+}
+.anima-component-wrapper a *,
+.anima-component-wrapper a,
+.anima-component-wrapper input,
+.anima-component-wrapper video,
+.anima-component-wrapper iframe,
+.anima-listeners-active,
+.anima-listeners-active * {
+  pointer-events      : auto;
+}
+.anima-hidden,
+.anima-hidden * {
+  visibility          : hidden;
+  pointer-events      : none;
+}
+.anima-smart-layers-pointers,
+.anima-smart-layers-pointers * {
+  pointer-events      : auto;
+  visibility          : visible;
+}
+.anima-component-wrapper.anima-not-ready,
+.anima-component-wrapper.anima-not-ready * {
+  visibility          : hidden !important;
+}
+.anima-listeners-active-click,
+.anima-listeners-active-click * {
+  cursor              : pointer;
+}
