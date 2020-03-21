@@ -6,8 +6,8 @@ VALUES ('', '', '', '', '', '', current_timesstamp());
 --Teams anzeigen
 
 SELECT team.ID, team.Name
-FROM user, team, user-team-zuordnung
-WHERE user.ID = user-team-zuordnung.ID
+FROM `user`, team, `user-team-zuordnung`
+WHERE `user`.Email = `user-team-zuordnung`.UserID
 ORDER BY team.ID
 
 --Teams erstellen
