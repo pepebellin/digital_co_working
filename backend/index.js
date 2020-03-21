@@ -1,6 +1,6 @@
 /*-------------TODO--------------
 
-/teams	GET (x)
+/teams	GET (JOIN)
 /teams	POST (x)
 /teams/routines	GET (x)
 /teams/routines	POST (x)
@@ -55,27 +55,42 @@ connection.connect((err) => {
 app.get('/teams', (req, res) => {
     //Getting of parameter
     var user_id = req.query.user_id;
-    var result = {};
+    var result = {"teams":[]};
 
+    /* DB Query */
     
+    connection.query("SELECT team.Name FROM team INNER JOIN `user-team-zuordnung` "+
+    "ON `user-team-zuordnung`.TeamID = team.Name WHERE `user-team-zuordnung`.UserID = " + user_id + ";", (err,rows) => {
+        if(err) throw err;
 
-    /*
-    Result format has to be like this
-    {[
-        {
-            "team_id":"",
-            "team_name":""
-        },{
-            "team_id":"",
-            "team_name":""
+           /*
+            Result format has to be like this
+            {[
+                {
+                    "team_name":""
+                },{
+                    "team_name":""
+                }
+
+            ]}
+            */
+
+        //for loop to take all result teams and put them into JSON
+        
+        var i;
+        for (i = 0; i < rows.length; i++) {
+            result.teams.push(
+                {
+                    "team_name":rows[i].Name
+                }
+            );
         }
 
-    ]}
-    */
+        console.log(result);
 
-    //for loop to take all result teams and put them into JSON
-
-    res.send(result);
+        res.send(result);
+    });
+    
 });
 
 // POST /teams
@@ -87,20 +102,33 @@ app.post('/teams', (req, res) => {
     Body format has to be like this:
     {
         "team" : "Name des Teams",
-        "user" : ["email@gmail.com", "email@gmail.com"]
+        "users" : ["email@gmail.com", "email@gmail.com"]
     } */
 
     var body = req.body;
     var team_name = body.team_name;
-    var user_id = body.user_id;
+    var users = body.users;
 
-    // @Yannik -> User Loop für SQL query? Wie ist das format?
+    connection.query("INSERT INTO `team` (`Name`, `Erstellungsdatum`)"+
+    " VALUES ('" + team_name + "', NULL);", (err,rows) => {
+        if(err) throw err;
+    });
 
-    /*
-        DB Query
-    */
+    var userQuery = "INSERT INTO `user-team-zuordnung` (`UserID`, `TeamID`, `Erstellungsdatum`) VALUES";
 
-    res.send('Team ' + team + ' wurde erstellt. Anzahl der Mitglieder : ' + user.length);
+    var i;
+    for (i = 0; i < users.length; i++) {
+        userQuery += "('User"+ i +"', '" + team_name + "', NULL),"
+    }
+
+    userQuery = userQuery.substring(0, userQuery.length - 1);
+
+    connection.query(userQuery, (err,rows) => {
+        if(err) throw err;
+        res.send('Team ' + team_name + ' wurde erstellt. Anzahl der Mitglieder : ' + users.length);;
+    });
+
+
 });
 
 // GET /teams/routines
@@ -160,17 +188,23 @@ app.post('/teams/routines', (req, res) => {
     {
         "team_id" : "ID des Teams",
         "routine_name" : "Name der Routine"
-    } */
+    } 
+    */
 
     var body = req.body;
     var team_id = body.team_id;
     var routine_name = body.routine_name;
 
-    /*
-        DB Query
-    */
+    /* DB Query */
+    
+    connection.query("INSERT INTO `routine` (`ID`, `Name`, `TeamID`) "+
+    "VALUES (NULL, '" + routine_name + "', '" + team_id + "')", (err,rows) => {
+        if(err) throw err;
+        res.send('Routine ' + routine_name + ' wurde erstellt.');
+    });
 
-    res.send('Routine ' + routine + ' wurde erstellt.');
+
+    
 });
 
 // POST /teams/routines/unterpunkt
@@ -196,11 +230,15 @@ app.post('/teams/routines/unterpunkt', (req, res) => {
     var Inhalt_ID = body.Inhalt_ID;
     var Beschreibung = body.Beschreibung;
 
-    /*
-        DB Query
-    */
+    var unterpunkteQuery = "INSERT INTO `unterpunkte` (`ID`, `Name`, `Starttime`, `Endtime`, `KategorieID`, `Beschreibung`, `RoutineID`) "+
+    "VALUES (NULL, '" + unterpunkt + "', '" + Start_Uhrzeit + "', '"+End_Uhrzeit+"', '"+Inhalt_ID+"', '"+Beschreibung+"', '"+routine_id+"')";
 
-    res.send('Unterpunkt ' + Unterpunkt + ' wurde erstellt.');
+    connection.query(unterpunkteQuery, (err,rows) => {
+        if(err) throw err;
+        res.send('Unterpunkt ' + unterpunkt + ' wurde erstellt.');
+    });
+
+    
 });
 
 // GET /teams/routine
@@ -211,37 +249,52 @@ app.post('/teams/routines/unterpunkt', (req, res) => {
 app.get('/teams/routine', (req, res) => {
     //Getting of parameter
     var routine_id = req.query.routine_id;
-    var result = {};
+    var result = {"unterpunkte":[]};
 
-    /*
-    
-        DB Query 
-    
-    */
+    /* DB Query */
+    connection.query('SELECT unterpunkte.ID, unterpunkte.Name, unterpunkte.Starttime, unterpunkte.Endtime, unterpunkte.Beschreibung '+
+    'FROM unterpunkte WHERE unterpunkte.RoutineID = ' + routine_id + ' ORDER BY Starttime', (err,rows) => {
+        if(err) throw err;
 
-    /*
-    Result format has to be like this
-    {[
-        {
-            "routine_id" : "ID der Routine",
-            "unterpunkt" : "Name des Unterpunkts",
-            "Start_Uhrzeit" : "HH:mm",
-            "End_Uhrzeit" : "HH:mm",
-            "Inhalt_ID" : "ID der Kategorie",
-            "Beschreibung" : "Beschreibung des Unterpunktes"
-        },{
-            "routine_id" : "ID der Routine",
-            "unterpunkt" : "Name des Unterpunkts",
-            "Start_Uhrzeit" : "HH:mm",
-            "End_Uhrzeit" : "HH:mm",
-            "Inhalt_ID" : "ID der Kategorie",
-            "Beschreibung" : "Beschreibung des Unterpunktes"
+        /*
+        Result format has to be like this
+        {[
+            {
+                "unterpunkt_id" : "ID der Routine",
+                "unterpunkt" : "Name des Unterpunkts",
+                "Start_Uhrzeit" : "HH:mm",
+                "End_Uhrzeit" : "HH:mm",
+                "Inhalt_ID" : "ID der Kategorie",
+                "Beschreibung" : "Beschreibung des Unterpunktes"
+            },{
+                "unterpunkt_id" : "ID der Routine",
+                "unterpunkt" : "Name des Unterpunkts",
+                "Start_Uhrzeit" : "HH:mm",
+                "End_Uhrzeit" : "HH:mm",
+                "Inhalt_ID" : "ID der Kategorie",
+                "Beschreibung" : "Beschreibung des Unterpunktes"
+            }
+        ]}
+        */
+
+        //for loop to take all result teams and put them into JSON
+        var i;
+        for (i = 0; i < rows.length; i++) {
+            result.unterpunkte.push(
+                {
+                    "unterpunkt_id" : rows[i].ID,
+                    "unterpunkt" : rows[i].Name,
+                    "Start_Uhrzeit" : rows[i].Starttime,
+                    "End_Uhrzeit" : rows[i].Endtime,
+                    "Beschreibung" : rows[i].Beschreibung
+                }
+            );
         }
-    ]}
-    */
 
-    //for loop to take all result teams and put them into JSON
-    res.send(result);
+        console.log(result);
+
+        res.send(result);
+    });
 });
 
 app.listen(port, () => console.log(`Hello world app listening on port ${port}!`));

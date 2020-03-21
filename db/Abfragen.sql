@@ -5,19 +5,13 @@ VALUES (NULL,'', '', '', '', '', '', NULL);
 
 --Teams anzeigen
 
-SELECT  team.Name
-FROM  team
-INNER JOIN `user-team-zuordnung`
-ON `user-team-zuordnung`.TeamID = team.Name
-WHERE `user-team-zuordnung`.UserID = 1 ;
-
- 
-
+SELECT  team.Name FROM  team INNER JOIN `user-team-zuordnung`
+ON `user-team-zuordnung`.TeamID = team.Name WHERE `user-team-zuordnung`.UserID = 1 ;
 
 
 --Teams erstellen
 
-INSERT INTO `team` () `Name`, `Erstellungsdatum`)
+INSERT INTO `team` (`Name`, `Erstellungsdatum`)
 VALUES ('', NULL);
 
 INSERT INTO `user-team-zuordnung` (`UserID`, `TeamID`, `Erstellungsdatum`)
