@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Erstellungszeit: 21. Mrz 2020 um 16:38
+-- Erstellungszeit: 21. Mrz 2020 um 18:22
 -- Server-Version: 10.4.11-MariaDB
 -- PHP-Version: 7.4.3
 
@@ -109,6 +109,7 @@ INSERT INTO `unterpunkte` (`ID`, `Name`, `Starttime`, `Endtime`, `KategorieID`, 
 --
 
 CREATE TABLE `user` (
+  `ID` int(5) NOT NULL,
   `Email` varchar(30) NOT NULL,
   `Vorname` varchar(20) NOT NULL,
   `Nachname` varchar(20) NOT NULL,
@@ -122,9 +123,9 @@ CREATE TABLE `user` (
 -- Daten für Tabelle `user`
 --
 
-INSERT INTO `user` (`Email`, `Vorname`, `Nachname`, `Nutzername`, `Passwort`, `Geburtsdatum`, `Erstellungsdatum`) VALUES
-('user1@test.de', 'Ulf', 'Fischer', 'ufischer', '123456', '2020-03-31', '2020-03-21 15:02:56'),
-('user@test.de', 'Peter', 'Schmidt', 'pschmidt', '123456', '2020-03-01', '2020-03-21 15:02:56');
+INSERT INTO `user` (`ID`, `Email`, `Vorname`, `Nachname`, `Nutzername`, `Passwort`, `Geburtsdatum`, `Erstellungsdatum`) VALUES
+(1, 'user1@test.de', 'Ulf', 'Fischer', 'ufischer', '123456', '2020-03-31', '2020-03-21 14:02:56'),
+(2, 'user@test.de', 'Peter', 'Schmidt', 'pschmidt', '123456', '2020-03-01', '2020-03-21 14:02:56');
 
 -- --------------------------------------------------------
 
@@ -181,8 +182,7 @@ ALTER TABLE `unterpunkte`
 -- Indizes für die Tabelle `user`
 --
 ALTER TABLE `user`
-  ADD PRIMARY KEY (`Email`),
-  ADD UNIQUE KEY `Nutzername` (`Nutzername`);
+  ADD PRIMARY KEY (`ID`);
 
 --
 -- Indizes für die Tabelle `user-team-zuordnung`
@@ -217,6 +217,12 @@ ALTER TABLE `team`
 --
 ALTER TABLE `unterpunkte`
   MODIFY `ID` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=100003;
+
+--
+-- AUTO_INCREMENT für Tabelle `user`
+--
+ALTER TABLE `user`
+  MODIFY `ID` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
