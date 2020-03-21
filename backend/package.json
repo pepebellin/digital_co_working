@@ -18,6 +18,8 @@
   "homepage": "https://github.com/pepebellin/digital_co_working#readme",
   "dependencies": {
     "cors": "^2.8.5",
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "mysql": "github:mysqljs/mysql",
+    "mysql2": "^2.1.0"
   }
 }

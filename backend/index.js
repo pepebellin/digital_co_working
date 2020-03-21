@@ -7,17 +7,6 @@
 /teams/routines/unterpunkt	POST (x)
 /teams/routine	GET (x)
 
-- How to receive parameter? -> ?para1=xyz&para2=abc
-
-Parameter of functions
-
-/teams	GET	User (x)
-/teams	POST	Team-Name, User-ID (x)
-/teams/routines	GET	Team-ID (x)
-/teams/routines	POST	Team-ID, Routine-Name (x)
-/teams/routines/unterpunkt	POST	"Routine-ID, Unterpunkt-Name, Start_Uhrzeit, End_Uhrzeit, Inhalt_ID, Beschreibung" (x)
-/teams/routine	GET	Routine-ID (x)
-
 
 ---------------------------*/
 
@@ -37,6 +26,27 @@ app.use(cors());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
+/* ----------------------------- */
+
+// Database connection
+
+var mysql = require("mysql");
+
+var connection = mysql.createConnection({
+    user: "worker",
+    password: "worker123",
+    database: "digital_co_working",
+    socketPath: '/Applications/MAMP/tmp/mysql/mysql.sock'
+});
+
+connection.connect((err) => {
+  if (err) throw err;
+  console.log('Connected!');
+});
+
+
+/*-----------------------------*/
+
 //Configure REST methods
 
 // GET /teams
@@ -47,9 +57,7 @@ app.get('/teams', (req, res) => {
     var user_id = req.query.user_id;
     var result = {};
 
-    /*
-        DB Query
-    */
+    
 
     /*
     Result format has to be like this
@@ -92,7 +100,7 @@ app.post('/teams', (req, res) => {
         DB Query
     */
 
-     .send('Team ' + team + ' wurde erstellt. Anzahl der Mitglieder : ' + user.length);
+    res.send('Team ' + team + ' wurde erstellt. Anzahl der Mitglieder : ' + user.length);
 });
 
 // GET /teams/routines
@@ -101,30 +109,46 @@ app.post('/teams', (req, res) => {
 app.get('/teams/routines', (req, res) => {
     //Getting of parameter
     var team_id = req.query.team_id;
-    var result = {};
+    var result = {"routines":[]};
 
-    /*
-    
-        DB Query 
-    
-    */
+    /* DB Query */
+    connection.query('SELECT ROUTINE.ID, ROUTINE.Name FROM ROUTINE WHERE ROUTINE.TeamID = '+ team_id +' ORDER BY ROUTINE.ID', (err,rows) => {
+        if(err) throw err;
 
-    /*
-    Result format has to be like this
-    {[
-        {
-            "routine_id":"",
-            "routine_name":""
-        },{
-            "routine_id":"",
-            "routine_name":""
+        /*
+            Result format has to be like this
+            {[
+                {
+                    "routine_id":"",
+                    "routine_name":""
+                },{
+                    "routine_id":"",
+                    "routine_name":""
+                }
+
+            ]}
+        */
+
+        //for loop to take all result teams and put them into JSON
+        var i;
+        for (i = 0; i < rows.length; i++) {
+            result.routines.push(
+                {
+                    "routine_id":rows[i].ID,
+                    "routine_name":rows[i].Name
+                }
+            );
         }
 
-    ]}
-    */
+        console.log(result);
 
-    //for loop to take all result teams and put them into JSON
-    res.send(result);
+        res.send(result);
+    });
+
+    
+
+    
+    
 });
 
 // POST /teams/routines
