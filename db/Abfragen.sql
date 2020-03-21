@@ -7,7 +7,7 @@ VALUES ('', '', '', '', '', '', current_timesstamp());
 
 SELECT team.ID, team.Name
 FROM `user`, team, `user-team-zuordnung`
-WHERE `user`.Email = `user-team-zuordnung`.UserID
+WHERE `user`.ID = `user-team-zuordnung`.UserID
 ORDER BY team.ID
 
 --Teams erstellen
