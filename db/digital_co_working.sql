@@ -144,11 +144,11 @@ CREATE TABLE `user-team-zuordnung` (
 --
 
 INSERT INTO `user-team-zuordnung` (`UserID`, `TeamID`, `Erstellungsdatum`) VALUES
-('user^', 0, '2020-03-21 15:13:29'),
-('user@test.de', 1000, '2020-03-21 15:13:29'),
-('user1@test.de', 10000, '2020-03-21 15:14:43'),
-('user@test.de', 10000, '2020-03-21 15:14:43'),
-('user@test.de', 10001, '2020-03-21 15:14:43');
+('1', 0, '2020-03-21 15:13:29'),
+('1', 1000, '2020-03-21 15:13:29'),
+('2', 10000, '2020-03-21 15:14:43'),
+('2', 10000, '2020-03-21 15:14:43'),
+('1, '2020-03-21 15:14:43');
 
 --
 -- Indizes der exportierten Tabellen
