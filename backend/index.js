@@ -92,7 +92,7 @@ app.post('/teams', (req, res) => {
         DB Query
     */
 
-    res.send('Team ' + team + ' wurde erstellt. Anzahl der Mitglieder : ' + user.length);
+     .send('Team ' + team + ' wurde erstellt. Anzahl der Mitglieder : ' + user.length);
 });
 
 // GET /teams/routines

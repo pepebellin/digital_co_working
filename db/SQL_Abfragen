@@ -1,0 +1,27 @@
+# Teams anzeigen
+
+SELECT TEAM.ID, TEAM.Name
+FROM USER, TEAM, USER-TEAM-ZUORDNUNG
+WHERE USER.ID = USER-TEAM-ZUORDNUNG.ID
+ORDER BY TEAM.ID
+
+# Teams erstellen
+
+
+#Routinen anzeigen
+
+SELECT ROUTINE.ID, ROUTINE.Name
+FROM ROUTINE
+WHERE ROUTINE.TeamID = Variable
+ORDER BY ROUTINE.ID
+
+#Routine erstellen
+
+#Unterpunkt hinzufügen
+
+#Routine anzeigen
+
+SELECT UNTERPUNKTE.ID, UNTERPUNKTE.Name, UNTERPUNKTE.Starttime, UNTERPUNKTE.Endtime, Beschreibung
+FROM UNTERPUNKTE
+WHERE UNTERPUNKTE.RoutineID = Variable
+ORDER BY Starttime
