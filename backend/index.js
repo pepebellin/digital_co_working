@@ -11,14 +11,13 @@
 
 Parameter of functions
 
-/teams	GET	User
-/teams	POST	Team-Name, User-ID
-/teams/routines	GET	Team-ID
-/teams/routines	POST	Team-ID, Routine-Name
-/teams/routines/unterpunkt	POST	"Routine-ID, Unterpunkt-Name, 
-Start_Uhrzeit, End_Uhrzeit, 
-Inhalt_ID, Beschreibung"
+/teams	GET	User (x)
+/teams	POST	Team-Name, User-ID ()
+/teams/routines	GET	Team-ID ()
+/teams/routines	POST	Team-ID, Routine-Name ()
+/teams/routines/unterpunkt	POST	"Routine-ID, Unterpunkt-Name, Start_Uhrzeit, End_Uhrzeit, Inhalt_ID, Beschreibung"
 /teams/routine	GET	Routine-ID
+
 
 ---------------------------*/
 
@@ -41,42 +40,85 @@ app.use(bodyParser.json());
 //Configure REST methods
 
 // GET /teams
+// Parameter: User
+// Description: Empfangen aller Teams des Users
 app.get('/teams', (req, res) => {
-    //Logging of parameter
-    var team = {};
-    team.user = req.query.user;
-    console.log(team.user);
-    res.send(team);
+    //Getting of parameter
+    var user = req.query.user;
+    var result = {};
+
+    /*
+        DB Query
+    */
+
+    /*
+    Result format has to be like this
+    {[
+        {
+            "team_id":"",
+            "team_name":""
+        },{
+            "team_id":"",
+            "team_name":""
+        }
+
+    ]}
+    */
+
+    //for loop to take all result teams and put them into JSON
+
+    res.send(result);
 });
 
 // POST /teams
+// Parameter: Team-Name, User-ID
+// Description: Erstellen eines Teams mit Usern
+
 app.post('/teams', (req, res) => {
-    // We will be coding here
-    const book = req.body;
+    /* 
+    Body format has to be like this:
+    {
+        "team" : "Name des Teams",
+        "user" : ["email@gmail.com", "email@gmail.com"]
+    } */
 
-    // Output the book to the console for debugging
-    console.log(book);
-    books.push(book);
+    var body = req.body;
+    var team = body.team;
+    var user = body.user;
 
-    res.send('Book is added to the database');
+    // @Yannik -> User Loop für SQL query? Wie ist das format?
+
+    /*
+        DB Query
+    */
+
+    res.send('Team ' + team + ' wurde erstellt. Anzahl der Mitglieder : ' + user.length);
 });
 
 // GET /teams/routines
+// Parameter: 
+// Description: Empfangen der Routinen eines Teams
 app.get('/teams/routines', (req, res) => {
     // We will be coding here
 });
 
 // POST /teams/routines
+// Parameter: 
+// Description: Routine vor Unterpunkten erzeugen
 app.post('/teams/routines', (req, res) => {
     // We will be coding here
 });
 
 // POST /teams/routines/unterpunkt
+// Parameter: 
+// Description: Hinzufügen eines Unterpunktes
 app.post('/teams/routines/unterpunkt', (req, res) => {
     // We will be coding here
 });
 
 // GET /teams/routine
+// Parameter: 
+// Description: Empfangen der Unterpunkte einer Routine
 app.get('/teams/routine', (req, res) => {
     // We will be coding here
 });
