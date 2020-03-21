@@ -28,7 +28,7 @@ ORDER BY routine.ID
 
 --Routine erstellen
 
-INSERT INTO `routine` (`ID`, `Name`, ,TeamID, `Erstellungsdatum`)
+INSERT INTO `routine` (`ID`, `Name`, ,`TeamID`, `Erstellungsdatum`)
 VALUES (NULL, '', '', NULL)
 
 --Unterpunkt hinzufügen
