@@ -1,10 +1,130 @@
+/*************************
+ * GRID SCHEDULE LAYOUT
+ *************************/
+ @media screen  {
+  .schedule {
+      display: grid;
+      grid-gap: 0.5em;
+      grid-template-rows:
+          [time-0800] 1fr
+          [time-0900] 1fr
+          [time-1000] 1fr
+          [time-1100] 1fr
+          [time-1200] 1fr
+          [time-1300] 1fr
+          [time-1400] 1fr
+          [time-1500] 1fr
+          [time-1600] 1fr
+          [time-1700] 1fr;
+
+          /* Note 1:
+          Use 24hr time for gridline names for simplicity
+
+          Note 2: Use "auto" instead of "1fr" for a more compact schedule where height of a slot is not proportional to the session length. Implementing a "compact" shortcode attribute might make sense for this!
+          Try 0.5fr for more compact equal rows. I don't quite understand how that works :)
+          */
+      
+      grid-template-columns:
+          [times] 4em
+          [track-1-start] 1fr
+        ;
+  }
+}
+
+.time-slot {
+  grid-column: times;
+}
+
+.track-slot {
+  display: none; /* hidden on small screens and browsers without grid support */
+}
+
+/*************************
+* VISUAL STYLES
+* Design-y stuff ot particularly important to the demo
+*************************/
+
+.session {
+  padding: .5em;
+  border-radius: 2px;
+  font-size: 14px;
+  box-shadow:
+      rgba(255,255,255,.6) 1px 1px 0,
+      rgba(0,0,0,.3) 4px 4px 0;
+}
+
+.session-title,
+.session-time,
+.session-track,
+.session-presenter {
+  display: block;
+}
+
+.session-title,
+.time-slot {
+  margin: 0;
+  font-size: 1em;
+}
+
+.session-title a {
+  color: #fff;
+  text-decoration-style: dotted;
+  
+  &:hover {
+      font-style: italic;
+  }
+  
+  &:focus {
+      outline: 2px dotted rgba(255,255,255,.8);
+  }
+}
+
+.track-slot,
+.time-slot {
+  font-weight: bold;
+  font-size:.75em;
+}
+
+.track-1 {
+  background-color: #1259B2;
+  color: #fff;
+}
+
+
+.track-all {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #ccc;
+  color: #000;
+  box-shadow: none;
+}
+
+.text {
+  max-width: 750px;
+  font-size: 18px;
+  margin: 0 auto 50px;
+}
+
+.meta {
+  color: #555;
+  font-style: italic;
+}
+
+.meta a {
+  color: #555;
+}
+
+hr {
+  margin: 40px 0;
+}
 
 
 .registercopy {
   width               : 100%;
   min-width           : 912px;
-  height              : 100vh;
-  min-height          : 1105px;
+  height              : 100%;
+  min-height          : 1300px;
   position            : relative;
   overflow            : hidden;
   margin              : 0px;
@@ -290,7 +410,7 @@ div {
 .registercopy .group2 .group52 {
   background-color    : rgba(255,255,255,0.0);
   top                 : 328px;
-  height              : 512px;
+  height              : 700px;
   width               : 404px;
   position            : absolute;
   margin              : 0;
@@ -301,7 +421,7 @@ div {
 .registercopy .group2 .group52 .rectangle8copy3 {
   background-color    : rgba(255,255,255,0.0);
   top                 : 0px;
-  height              : 512px;
+  height              : 700px;
   width               : 404px;
   position            : absolute;
   margin              : 0;
@@ -329,7 +449,7 @@ div {
   background-color    : rgba(255,255,255,0.0);
   top                 : 546px;
   height              : 48px;
-  width               : 181px;
+  width               : 800px;
   position            : absolute;
   margin              : 0;
   left                : 32px;
@@ -366,10 +486,9 @@ div {
 .registercopy .group6 {
   background-color    : rgba(255,255,255,0.0);
   top                 : 614px;
-  height              : 497px;
   width               : 425px;
+  height              : 650px;
   position            : absolute;
-  margin              : 0;
   left                : -1px;
   transform           : rotate(0deg);
   opacity             : 1.0;
@@ -906,47 +1025,47 @@ div {
   text-align          : left;
   line-height         : 16.0px;
 }
-.registercopy .group6 .group9 {
+.registercopy  .group9 {
   background-color    : rgba(255,255,255,0.0);
-  top                 : 416px;
-  height              : 61px;
-  width               : 53px;
+  top                 : 245px;
+  height              : 40px;
+  width               : 40px;
   position            : absolute;
   margin              : 0;
-  left                : 284px;
+  left                : 870px;
   transform           : rotate(0deg);
   opacity             : 1.0;
 }
-.registercopy .group6 .group9 .oval {
+.registercopy  .group9 .oval {
   background-color    : rgba(255,255,255,0.0);
-  top                 : 21px;
+  top                 : 4px;
   height              : 40px;
-  width               : 38px;
+  width               : 40px;
   position            : absolute;
   margin              : 0;
-  left                : 8px;
+  left                : 1px;
   transform           : rotate(0deg);
   opacity             : 0.5;
 }
-.registercopy .group6 .group9 .ovalcopy {
+.registercopy  .group9 .ovalcopy {
   background-color    : rgba(255,255,255,0.0);
   top                 : 0px;
-  height              : 56px;
-  width               : 53px;
+  height              : 40px;
+  width               : 40px;
   position            : absolute;
   margin              : 0;
   left                : 0px;
   transform           : rotate(0deg);
   opacity             : 1.0;
 }
-.registercopy .group6 .group9 .image1 {
+.registercopy  .group9 .image1 {
   background-color    : rgba(255,255,255,0.0);
-  top                 : 20px;
-  height              : 16px;
-  width               : 15px;
+  top                 : 12px;
+  height              : 13px;
+  width               : 13px;
   position            : absolute;
   margin              : 0;
-  left                : 18px;
+  left                : 14px;
   transform           : rotate(0deg);
   opacity             : 1.0;
 }
